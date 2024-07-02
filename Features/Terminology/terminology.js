@@ -3,12 +3,12 @@ class TerminologyModal extends HTMLElement {
         this.innerHTML = `
         <div class="modal" id="terminologyModal" style="display: none;">
             <div class="modal-content">
-                <span class="close"><img src="../Assets/icons/closeWhite.svg"></span>
+                <span class="close"><img src="./Assets/icons/closeWhite.svg"></span>
                 <h2>Terminologie</h2> 
                 <table class="modal-table" id="terminologyModal">
                     <tr>
                         <td><b>Terminologie/Fachbegriff</b></td>
-                        <input type="text" id="searchInput" placeholder="Search..."><img src="../Assets/icons/search.svg" id="searchIcon">
+                        <input type="text" id="searchInput" placeholder="Search..."><img src="./Assets/icons/search.svg" id="searchIcon">
                         <td><b>Bedeutung</b></td>
                     </tr>
                     <tr>
