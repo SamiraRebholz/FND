@@ -3,10 +3,11 @@
 @import url(./variables.css);
 @import url(../../Features/Navigation/navigation.css);
 
-html{
+html {
     width: 100%;
     height: 100%;
 }
+
 body {
     font-family: 'Roboto Light', sans-serif;
     background-color: var(--background-color);
@@ -27,32 +28,38 @@ a {
 }
 
 .highlight {
-    font-weight: bold; /* oder eine andere Art der Hervorhebung */
+    font-weight: bold;
     background-color: var(--accent-color);
 }
 
 .hidden {
     display: none;
 }
+
 .scrolled {
     background-color: rgba(0, 51, 102, 0.5);
     backdrop-filter: blur(15px);
     border: 0.08rem solid white;
 }
+
 .miniImg {
-    height: 5rem; 
+    height: 5rem;
     width: auto;
+}
+
+.w75 {
+    width: 75%;
 }
 
 /*for index.html*/
 #brain-image {
     height: 70vmin;
     position: absolute;
-    /*mittig zentrieren, x und y achse*/
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 .glass-card {
     background-color: rgba(217, 217, 217, 0.2);
     backdrop-filter: blur(15px);
@@ -67,7 +74,6 @@ a {
     transform: translate(-50%, -50%);
 
     text-align: center;
-    /*text horizontal zentrieren*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,13 +83,13 @@ a {
     line-height: 3vmax;
 }
 
-.text-block{
+.text-block {
     padding: 0;
     margin: 0;
     width: 15vmax;
 }
 
-.bottom-left{
+.bottom-left {
     position: absolute;
     left: 2%;
     bottom: 2%;
@@ -95,6 +101,7 @@ a {
     top: 6.5rem;
     text-align: right;
 }
+
 /*------------------*/
 
 /*for symptoms.html*/
@@ -103,9 +110,8 @@ table {
     width: 96%;
     border-spacing: 0;
     background-color: var(--secondary-color);
-    /*border: 1px solid var(--primary-color);*/
     border-radius: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 table .link-block {
@@ -113,18 +119,18 @@ table .link-block {
     color: white;
     width: 10%;
     text-align: center;
-    padding: 10px 0; /* Erhöhter Zellabstand */
-    cursor: pointer; /* Cursor ändern, um Interaktivität zu signalisieren */
+    padding: 10px 0;
+    cursor: pointer;
 }
 
 table td {
-    transition: background-color 0.3s; /* Sanfter Übergang für Hover-Effekt */
+    transition: background-color 0.3s;
     text-align: center;
-    padding: 10px 0; /* Erhöhter Zellabstand */
+    padding: 10px 0;
 }
 
 table td:hover {
-    background-color: rgba(0, 0, 0, 0.05); /* Hover-Effekt für Zeilen */
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 table td.link-block:hover {
@@ -138,27 +144,40 @@ table tr:first-child .link-block {
 table tr:last-child .link-block {
     border-radius: 0 0 0 1em;
 }
-.modal-table{
+
+.modal-table {
     background-color: transparent;
     border-collapse: collapse;
     box-shadow: none;
 }
-.modal-table td{
+
+.modal-table td {
     text-align: left;
 }
-.modal-table td:not(:first-child){
+
+.modal-table td:not(:first-child) {
     padding-left: 1%;
 }
+
 .modal-table ul {
     list-style-type: none;
     text-align: left;
 }
+
 #bppm ul li {
     padding-bottom: 0.6em;
 }
+
 /*------------------*/
 
 /*Card-Style*/
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .card {
     width: 21vmax;
     height: 25vmax;
@@ -167,12 +186,15 @@ table tr:last-child .link-block {
     overflow: hidden;
     position: relative;
 }
-.card img, .card video {
+
+.card img,
+.card video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
 }
+
 .card-text {
     position: absolute;
     bottom: 0;

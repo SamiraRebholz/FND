@@ -11,7 +11,7 @@
   overflow: auto;
   margin: 0;
 }
-  
+
 .modal-content {
   background-color: rgba(217, 217, 217, 0.3);
   backdrop-filter: blur(15px);
@@ -22,17 +22,34 @@
   border-radius: 1rem;
   width: 80%;
 }
-  
+
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-  
+
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modalImgContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modalTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalFlexContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }

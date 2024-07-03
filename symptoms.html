@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./Features/Modal/modal.css">
     <link rel="stylesheet" href="./Features/picOverlay/picOverlay.css">
     <link rel="stylesheet" href="./Features/Terminology/terminology.css">
+    <link rel="stylesheet" href="./Features/tableSwitcher/tableSwitcher.css">
 </head>
 
 <body>
@@ -65,7 +66,7 @@
         </table>
 
         <h2>Symptome</h2>
-        <div style="display: flex; flex-direction: row; gap: 1rem; flex-wrap: wrap;">
+        <div class="cardContainer">
             <div class="card">
                 <img src="./Assets/images/dystonia1.jpeg" alt="">
                 <div class="card-text modal-opener" data-modal-id="dystonia">
@@ -114,8 +115,8 @@
         <div id="hoover" class="modal">
             <div class="modal-content">
                 <span class="close"><img src="./Assets/icons/close.svg" alt="x"></span>
-                <div style="display: flex; flex-direction: row; gap: 0.5rem;">
-                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <div class="modalFlexContainer">
+                    <div class="modalImgContainer">
                         <img src="./Assets/images/hoover1.jpeg"
                             style="height: 17vmax; width: 17vmax; object-fit: cover;">
                         <img src="./Assets/images/hoover2.jpeg"
@@ -367,7 +368,7 @@
                     möglich (11,9%).
                 </p>
                 <p>
-                <table class="modal-table table1" data-table-id="2">
+                <table class="modal-table table1" data-table-id="1">
                     <tr>
                         <td><u>Phänotyp</u></td>
                         <td><u>Beschreibung</u></td>
@@ -435,7 +436,7 @@
                             nahegelegene Wände oder Möbel</td>
                     </tr>
                 </table>
-                <table class="hidden modal-table table2" data-table-id="2">
+                <table class="hidden modal-table table2" data-table-id="1">
                     <tr>
                         <td><u>Phänotyp</u></td>
                         <td><u>Beschreibung</u></td>
@@ -492,11 +493,11 @@
                         <td>Dropping of the forefoot at initial swing or mid-swing </td>
                     </tr>
                 </table>
-                <div style="display: flex; align-items: center;">
-                    <p class="highlight text-before" data-table-id="2">Phänotypen</p>
+                <div class="tableSwitcherTrigger">
+                    <p class="highlight text-before" data-table-id="1">Phänotypen</p>
                     <img src="./Assets/icons/arrows-right-left.svg" alt="" class="noOverlay" class="icon"
-                        data-table-id="2" style="margin: 0 10px;">
-                    <p class="text-after" data-table-id="2">Neurologische Erkrankungen nachahmende Phänotypen</p>
+                        data-table-id="1">
+                    <p class="text-after" data-table-id="1">Neurologische Erkrankungen nachahmende Phänotypen</p>
                 </div>
                 </p>
                 <p><b>Diagnostik:</b><br>
@@ -518,9 +519,9 @@
                     liegt im Erkrankungsalter. Tourette beginnt bereits in der frühen Kindheit, während funktionelle
                     Tics meistens erst ab einem Alter von 10-11 Jahren. Manchmal treten sie auch im Erwachsenenalter das
                     erste Mal auf.
-                <div style="display: flex; flex-direction: row; gap: 2vmax;">
+                <div  class="modalFlexContainer">
                     <img src="./Assets/images/tic2.png" alt="" style="height: 18vmax; width: auto;">
-                    <div style="display: flex; flex-direction: column;">
+                    <div class="modalTextContainer">
                         <ul>
                             <li>Links: wie sich funktionelle Tics äußern</li>
                             <li>Mitte: welche Gemeinsamkeiten funktionelle Tics und Tourette haben</li>
@@ -608,13 +609,16 @@
         <div id="facial" class="modal">
             <div class="modal-content">
                 <span class="close"><img src="./Assets/icons/close.svg" alt="x"></span>
+                <div class="modalFlexContainer">
+                    <div class="modalImgContainer"></div>
+                </div>
             </div>
         </div>
         <div id="abductor" class="modal">
             <div class="modal-content">
                 <span class=" close"><img src="./Assets/icons/close.svg" alt="x"></span>
-                <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 0.5rem;">
-                    <div style="display: flex; flex-direction: column; width: 75%; gap: 0.5rem;">
+                <div class="modalFlexContainer">
+                    <div class="modalImgContainer w75">
                         <img src="./Assets/images/abductor2.jpg" alt="" style="max-width: 100%;">
                         <details>
                             <summary>Was bedeuten die Symbole?</summary>
@@ -629,7 +633,7 @@
                             </ul>
                         </details>
                     </div>
-                    <div style="display: flex; flex-direction: column;">
+                    <div class="modalTextContainer">
                         <p><b>Was ist das Abductor-Zeichen?</b><br>
                             Das Abductor-Zeichen ist ein Test mit welchem man feststellen kann, ob es sich um eine
                             funktionelle Lähmung handelt. Dabei wird beobachtet, wie die Muskeln an den Hüften

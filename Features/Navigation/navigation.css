@@ -3,9 +3,6 @@
 nav {
     width: 100%;
     z-index: 9999;
-    /*position: fixed;
-    left: 50%;
-    transform: translateX(-50%);*/
 }
 
 nav ul {
