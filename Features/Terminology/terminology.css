@@ -36,3 +36,17 @@
 #searchIcon {
     margin-left: 0.5rem;
 }
+.show {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
+@media (max-width: 599px) {
+    #openTerminology {
+        bottom: 7vmax;
+        left: 0.5vmax;
+        width: 5vmax;
+        height: 5vmax;
+    }
+}

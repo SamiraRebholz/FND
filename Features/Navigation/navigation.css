@@ -6,7 +6,7 @@ nav {
 }
 
 nav ul {
-    z-index: 9999;	
+    z-index: 9999;
     background-color: var(--primary-color);
     width: 75%;
     height: 1rem;
@@ -23,4 +23,55 @@ nav ul {
     transform: translateX(-50%);
 }
 
-nav a {color: var(--secondary-color);}
+nav a {
+    color: var(--secondary-color);
+}
+
+
+@media (max-width: 599px) {
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        width: 100%;
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    nav ul li a:not(:has(img)) {
+        display: none;
+    }
+
+    nav .menu {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navModal ul {
+        list-style: none;
+        position: fixed;
+        left: 50%;
+        bottom: 5rem;
+        transform: translateX(-50%);
+        background-color: rgba(0, 51, 102, 0.5);
+        color: white;
+        backdrop-filter: blur(10px);
+        width: 80%;
+        height: max-content;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    .navModal ul li a {
+        color: white;
+        font-size: larger;
+        line-height: 2rem;
+    }
+}

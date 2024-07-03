@@ -4,6 +4,7 @@ class MyNavbar extends HTMLElement {
         <nav>
           <ul>
             <li><a href="./index.html"><img src="./Assets/icons/home.svg" alt="home" class="noOverlay"></a></li>
+            <li><a><img src="./Assets/icons/menu.svg" alt="menu" class="noOverlay hidden menu"></a></li>
             <li><a href="./symptoms.html">Diagnostik & Symptome</a></li>
             <li><a href="">Pathophysiologie</a></li>
             <li><a href="">Epidemiologie</a></li>
@@ -27,3 +28,37 @@ class MyNavbar extends HTMLElement {
     }
   }
   window.onscroll = function() {scrollFunction()};
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon = document.querySelector('.menu');
+  const modal = document.createElement('div');
+  modal.innerHTML = `
+    <div class="modal navModal" style="display:none;">
+      <ul>
+        <li><a><img src="./Assets/icons/closeWhite.svg" alt="close" class="noOverlay close"></a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./symptoms.html">Diagnostik & Symptome</a></li>
+        <li><a href="">Pathophysiologie</a></li>
+        <li><a href="">Epidemiologie</a></li>
+        <li><a href="">Behandlung</a></li>
+        <li><a href="./sources.html">Quellen</a></li>
+      </ul>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  const modalDisplay = modal.querySelector('.modal');
+  const closeIcon = modal.querySelector('.close');
+
+  menuIcon.addEventListener('click', () => {
+    modalDisplay.style.display = 'block';
+  });
+  closeIcon.addEventListener('click', () => {
+    modalDisplay.style.display = 'none';
+  });
+
+  modalDisplay.addEventListener('click', (e) => {
+    if (e.target === modalDisplay) {
+      modalDisplay.style.display = 'none';
+    }
+  });
+});
