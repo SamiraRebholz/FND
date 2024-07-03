@@ -53,3 +53,9 @@
   flex-direction: row;
   gap: 0.5rem;
 }
+
+.sideImg {
+  height: 17vmax;
+  width: 17vmax;
+  object-fit: cover;
+}
