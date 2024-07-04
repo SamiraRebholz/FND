@@ -59,3 +59,25 @@
   width: 17vmax;
   object-fit: cover;
 }
+
+
+@media (max-width: 599px) {
+  .modalFlexContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .modalImgContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .sideImg {
+    height: 15vmax;
+    width: 15vmax;
+  }
+  .modal-content {
+    margin-bottom: 5rem;
+  }
+}

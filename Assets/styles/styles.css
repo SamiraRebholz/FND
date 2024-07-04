@@ -235,7 +235,31 @@ table tr:last-child .link-block {
 
 
 @media (max-width: 700px) {
-    .text-block {
+    /*.text-block {
         display: none;
+    }*/
+    .bottom-left {
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .top-right {
+        width: 100%;
+        position: absolute;
+        top: 2%;
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+    }
+}
+@media (max-width: 599px) {
+    .noMobileView {
+        display: none;
+    }
+    .glass-card * {
+        font-size: 1.8rem;
     }
 }
