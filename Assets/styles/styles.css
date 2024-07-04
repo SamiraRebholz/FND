@@ -262,4 +262,14 @@ table tr:last-child .link-block {
     .glass-card * {
         font-size: 1.8rem;
     }
+    main {
+        padding: 2% 2% 0 2%;
+    }
+    h1 {
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+    table {
+        width: 100%;
+    }
 }
