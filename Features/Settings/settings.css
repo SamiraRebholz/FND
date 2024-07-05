@@ -49,3 +49,14 @@ toggle-switch {
     top: 5%;
     right: 1%;
 }
+
+
+@media (max-width: 599px) {
+    /*placing the modal on the bottom of the screen */
+    .settingsContent {
+        position: fixed;
+        bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
