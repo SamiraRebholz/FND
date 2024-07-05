@@ -1,3 +1,4 @@
+@import url(../../Assets/styles/variables.css);
 #openTerminology {
     height: 3.5vmax;
     width: 3.5vmax;
@@ -5,7 +6,7 @@
     position: sticky;
     bottom: 1vmin;
     left: 1vmin;
-    background-color: rgba(0, 51, 102, 0.5);
+    background-color: var(--blue-modal-background-color);
     backdrop-filter: blur(10px);
     border: 0.08rem solid white;
     display: flex;
@@ -15,7 +16,7 @@
 }
 
 #terminologyModal .modal-content {
-    background-color: rgba(0, 51, 102, 0.5);
+    background-color: var(--blue-modal-background-color);
     color: white;
 }
 

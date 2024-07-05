@@ -5,6 +5,7 @@
     --secondary-color: #f0f0f0;
     --accent-color: #28a745;
     --modal-background-color: rgba(255, 255, 255, 0.75);
+    --blue-modal-background-color: rgba(0, 51, 102, 0.5);
     --modal-text-color: var(--text-color);
 }
 

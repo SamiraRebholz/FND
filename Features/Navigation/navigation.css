@@ -60,7 +60,7 @@ nav a {
         left: 50%;
         bottom: 5rem;
         transform: translateX(-50%);
-        background-color: rgba(0, 51, 102, 0.5);
+        background-color: var(--blue-modal-background-color);
         color: white;
         backdrop-filter: blur(10px);
         width: 80%;
