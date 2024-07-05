@@ -2,7 +2,7 @@ const openSettings = document.getElementsByClassName('settings');
 const settingsModal = document.createElement('div');
 settingsModal.innerHTML = `
     <div class="modal settingsModal" style="display:none;">
-        <div class="modal-content">
+        <div class="modal-conten settingsContent">
             <h2>Einstellungen</h2>
             <ul>
                 <li class="close"><a><img src="./Assets/icons/closeWhite.svg" alt="close" class="noOverlay close"></a></li>
@@ -38,12 +38,15 @@ settingsDisplay.addEventListener('click', (e) => {
 
 //Autoplay
 const toggleSwitch = document.getElementsByTagName('toggle-switch')[0];
-const video = document.querySelector('.video'); 
+const videos = document.querySelectorAll('.video');
+
 toggleSwitch.addEventListener('click', () => {
     if (toggleSwitch.isChecked()) {
-        video.play(); 
+        videos.forEach(video => video.play()); 
     } else {
-        video.currentTime = 0;
-        video.pause(); 
+        videos.forEach(video => {
+            video.currentTime = 0;
+            video.pause(); 
+        });
     }
 });
