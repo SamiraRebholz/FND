@@ -148,6 +148,26 @@ table td:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+table tr:first-of-type:hover td:first-child:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 1em 0 0 0;
+}
+
+table tr:first-of-type:hover td:last-child:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 0 1em 0 0;
+}
+
+table tr:last-of-type:hover td:first-child:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 0 1em;
+}
+
+table tr:last-of-type:hover td:last-child:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 1em 0;
+}
+
 table td.link-block:hover {
     color: var(--text-color);
 }
@@ -165,7 +185,27 @@ table tr:last-child .link-block {
     border-collapse: collapse;
     box-shadow: none;
 }
-
+.modal-table thead {
+    background-color: rgba(255, 255, 255, 0.28);
+}
+.modal-table thead td {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.modal-table td[colspan="3"] {
+    text-align: center;
+    text-decoration: underline;
+}
+.signOverview td:last-child{
+    width: 12%;
+}
+.modal-table thead td:first-child {
+    border-radius: 1em 0 0 1em;
+}
+.modal-table thead td:last-child {
+    border-radius: 0 1em 1em 0;
+}
 .modal-table td {
     text-align: left;
 }
@@ -194,9 +234,8 @@ table tr:last-child .link-block {
 }
 
 .card {
-    width: 21vmax;
-    height: 25vmax;
-    border: 1px solid #ccc;
+    width: 23.1vmax;
+    height: 24vmax;
     border-radius: 1em;
     overflow: hidden;
     position: relative;

@@ -4,7 +4,7 @@ class MyNavbar extends HTMLElement {
         <nav>
           <ul>
             <li><a href="./index.html"><img src="./Assets/icons/home.svg" alt="home" class="noOverlay"></a></li>
-            <li><a><img src="./Assets/icons/menu.svg" alt="menu" class="noOverlay hidden menu"></a></li>
+            <li class="hidden menu"><a><img src="./Assets/icons/menu.svg" alt="menu" class="noOverlay"></a></li>
             <li><a href="./symptoms.html">Diagnostik & Symptome</a></li>
             <li><a href="">Pathophysiologie</a></li>
             <li><a href="">Epidemiologie</a></li>
