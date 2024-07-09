@@ -329,7 +329,7 @@ table tr:last-child .link-block {
     }
 
     main {
-        padding: 2% 2% 0 2%;
+        padding: 2% 2% 5% 2%;
     }
 
     h1 {
@@ -345,4 +345,27 @@ table tr:last-child .link-block {
         overflow-x: scroll;
         white-space: nowrap;
     }
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    .imgContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .imgContainer img {
+        height: 10rem; /* Optional: Passt die Bildhöhe automatisch an, um das Seitenverhältnis zu erhalten */
+    }
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
 }
