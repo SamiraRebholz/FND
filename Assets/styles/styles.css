@@ -4,6 +4,7 @@
 @import url(../../Features/Navigation/navigation.css);
 @import url(../../Features/Settings/settings.css);
 @import url(../../Features/Modal/modal.css);
+@import url(../../Features/Terminology/terminology.css);
 
 html {
     width: 100%;
@@ -20,7 +21,7 @@ body {
 
 main {
     padding: 7vmin 2% 0 2%;
-    margin: 0;
+    margin: 0 0 10vmin 0;
     height: 100%;
 }
 
@@ -64,6 +65,23 @@ ul {
 
 ::-webkit-scrollbar {
     width: 0;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 30%;
+}
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    width: 69%;
 }
 
 /*for index.html*/

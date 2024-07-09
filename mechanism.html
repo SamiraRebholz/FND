@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathophysiologie</title>
+    <link rel="stylesheet" href="./Assets/styles/styles.css">
+</head>
+
+<body>
+    <my-navbar></my-navbar>
+    <main>
+        <h1>Pathophysiologie/Mechanismus</h1>
+        <h2>Biopsychosoziales Modell</h2>
+        <div class="flexContainer">
+            <div class="imgContainer">
+                <img src="./Assets/images/biopsychosozial.jpg" alt="">
+            </div>
+            <div class="textContainer">
+                Risikofaktoren beinhalten psychologischen Stress und Kindheitstraumata, besonders Vernachlässigung.
+                Hierbei ist jedoch zu beachten, dass in vielen Studien diese Faktoren manchmal in nicht mehr als
+                50% der Fälle genannt werden. <br>
+                Die Tatsache, dass Frauen häufiger betroffen sind, könnte durch die höhere Exposition zu
+                Kindheitstraumata begründet werden. <br>
+                Jedoch sind Frauen auch von anderen Erkrankungen (z.B. Multiple
+                Sklerose) häufiger betroffen. <br>
+                Bei Kindern können Familiendysfunktionen, Mobbing,
+                Gruppenzwang und manchmal auch Misshandlung Risikofaktoren darstellen. <br>
+                FND ist häufig begleitet von
+                anderen psychiatrischen Erkrankungen wie Depressionen, Angststörungen, PTBS und Persönlichkeitsstörungen
+                (Cluster B). Auch andere funktionelle Symptome wie chronische Schmerzen und Fatigue sind häufig, was auf
+                gemeinsame Mechanismen hinweist. <br>
+                Genetische Faktoren können ebenfalls ein Risikofaktor sein. <br>
+                In dem Bild kann man diese und andere Faktoren sehen und wie sie miteinander zusammenhängen.
+            </div>
+        </div>
+        <h2>Pathophysiologie</h2>
+        <div class="flexContainer">
+            <div class="imgContainer">
+                <img src="./Assets/images/pathophysiology.jpg" alt="">
+                <details>
+                    <summary>Was zeigt dieses Bild?</summary>
+                    Dieses Schema bezieht sich auf die funktionelle Bewegungsstörung, aber seine Prinzipien sind auf
+                    alle funktionellen neurologischen Störungen anwendbar. Bewegungen werden vom motorischen Kortex nach
+                    Planung und Vorbereitung im supplementär-motorischen Areal (SMA) generiert. Die Planung und
+                    Vorbereitung der Bewegung erzeugen Feedforward-Signale, die nach der Aktion mit Feedback von
+                    interozeptiven und externen Signalen verglichen werden. Wenn die Signale nicht übereinstimmen, wird
+                    die Bewegung nicht als freiwillig wahrgenommen. Das Gehirn hat ein Modell des Körpers und der Welt,
+                    das prädiktive Kodierung zu dieser multimodalen Integration hinzufügt. Feedback-Signale, die nicht
+                    mit der prädiktiven Kodierung übereinstimmen, erzeugen einen Vorhersagefehler, der das Modell so
+                    modifiziert, dass die prädiktive Kodierung mit dem nachfolgenden Feedback übereinstimmt. Bei
+                    funktionellen neurologischen Störungen wird angenommen, dass der Vorhersagefehler nicht genau
+                    aktualisiert wird, was die Dysfunktion aufrechterhält. Der grüne Pfeil zeigt, dass es mehrere
+                    allgemeine Einflüsse auf die Bewegungsgenerierung gibt, einschließlich Emotion und Aufmerksamkeit.
+                    DLPFC = dorsolateraler präfrontaler Kortex. SMA = supplementär-motorisches Areal. M1 = primäres
+                    motorisches Areal. rTPJ = rechter temporoparietaler Übergang.
+                </details>
+            </div>
+            <div class="textContainer">
+                Ein wichtiger Punkt bei FND ist der teilweise Verlusst der willkürlichen Kontrolle über den eigenen
+                Körper. <br>
+                Dieses Symptom kann am besten anhand des prädiktiven Kodierungsmodells erklärt werden. Wird eine
+                Bewegung geplant, wird ein motorisches Kommando an den motorischen Kortex im Gehirn gesendet, welcher
+                dann die Bewegung ausführt. Parallel dazu wird ein Feedforward Signal an das Handlungsnetzwerk
+                (agency network) gesendet. <br>
+                Nachdem die Bewegung ausgeführt wurde, erhält dieses Netzwerk ein Feedback
+                über die Bewegung. Dann wird ein Vergleich zwischen dem Feedforward und Feedback Signal durchgeführt. <br>
+                Passen beide Signale zusammen, entsteht das sogenannte "sense of agency" (Handlungsempfinden). <br>
+                Viele Studien deuten auf einen Mechanismus eines gestörten Handlungsempfindens hin, wobei
+                Neuroimaging-Studien auf eine abnormale Aktivierung des rechten temporoparietalen Übergangs hinweisen.
+                Die Evidenz deutet auf eine Übergewichtung der Feedforward-Signale unter dem Einfluss früherer
+                Erwartungen, Aufmerksamkeit und Emotionen hin. <br>
+                Ein elektrophysiologisches Experiment lieferte Hinweise auf eine langsame sensorische
+                Informationsverarbeitung, was auf eine reduzierte Aufmerksamkeitszuteilung für objektive Körpersignale
+                hindeutet. Dies könnte den Übergang zu einem überbetonten Feedforward-Signal erklären. <br>
+                Es kann postuliert werden, dass Aufmerksamkeit eine Rolle bei der Filterung des Feedback-Signals während
+                der multimodalen Integration spielt. Eine abnorm erhöhte Aufmerksamkeit auf das Symptom erklärt, warum
+                bewusste Bewegungen (z.B. das Heben des Beins) schwerer auszuführen sind als automatische Bewegungen, da
+                ein anderes motorisches Programm beteiligt ist.
+            </div>
+        </div>
+
+        <div id="openTerminology"><img src="./Assets/icons/question.svg" alt="" class="noOverlay"></div>
+        <terminology-modal></terminology-modal>
+    </main>
+    <script src="./Features/Navigation/navigation.js"></script>
+    <script src="./Features/Settings/settings.js"></script>
+    <script src="./Features/toggleSwitch/toggleSwitch.js"></script>
+    <script src="./Features/picOverlay/picOverlay.js"></script>
+    <script src="./Features/Terminology/terminology.js"></script>
+</body>
+
+</html>
