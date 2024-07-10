@@ -186,18 +186,6 @@ table tr:last-of-type:hover td:last-child:hover {
     border-radius: 0 0 1em 0;
 }
 
-table td.link-block:hover {
-    color: var(--text-color);
-}
-
-table tr:first-child .link-block {
-    border-radius: 1em 0 0 0;
-}
-
-table tr:last-child .link-block {
-    border-radius: 0 0 0 1em;
-}
-
 .modal-table {
     background-color: transparent;
     border-collapse: collapse;
@@ -216,6 +204,12 @@ table tr:last-child .link-block {
     text-decoration: underline;
 }
 .signOverview td:last-child{
+    width: 12%;
+}
+.signOverview td:nth-child(2) {
+    width: 75%;
+}
+.signOverview td:first-child{
     width: 12%;
 }
 .modal-table thead td:first-child {
@@ -291,15 +285,14 @@ table tr:last-child .link-block {
 
 
 
+@media (max-width: 1500px) {
+    .glass-card * {
+        font-size: 2.3rem;
+        line-height: normal;
+    }
+}
 
-
-
-
-@media (max-width: 700px) {
-
-    /*.text-block {
-        display: none;
-    }*/
+@media (max-width: 800px) and (min-width: 600px) {
     .bottom-left {
         width: 100%;
         position: absolute;
@@ -339,6 +332,7 @@ table tr:last-child .link-block {
 
     table {
         width: 100%;
+        overflow-wrap: break-word;
     }
     .modal-table {
         display: block;
