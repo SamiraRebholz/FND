@@ -39,6 +39,78 @@ class TerminologyModal extends HTMLElement {
                         <td>Extension</td>
                         <td>Aktive oder passive Streckbewegung eines Gelenks</td>
                     </tr>
+                    <tr>
+                        <td>Spezifität</td>
+                        <td>Die Spezifität eines diagnostischen Tests gibt die Wahrscheinlichkeit an, dass Gesunde korrekt als gesund erkannt werden.</td>
+                    </tr>
+                    <tr>
+                        <td>Sensitivität</td>
+                        <td>Die Sensitivität eines diagnostischen Tests gibt den Prozentsatz der erkrankten Patienten an, bei denen die Krankheit korrekt erkannt wird.</td>
+                    </tr>
+                    <tr>
+                        <td>Unilateral</td>
+                        <td>"auf einer Seite" oder "einseitig"</td>
+                    </tr>
+                    <tr>
+                        <td>Miosis</td>
+                        <td>Miosis bezeichnet die temporäre Verengung der Pupille durch Kontraktion des Musculus sphincter pupillae oder verringerte Aktivität des Musculus dilatator pupillae.</td>
+                    </tr>
+                    <tr>
+                        <td>Konvergenz</td>
+                        <td>Die Konvergenzreaktion ist eine über den Nervus oculomotorius (III) vermittelte reflexartige Reaktion von Bulbus und Pupille bei der Fixierung naher Objekte</td>
+                    </tr>
+                    <tr>
+                        <td>Latenz</td>
+                        <td>Latenz ist der Zeitraum zwischen dem Eintreffen eines Reizes und der Reizantwort oder seiner Wahrnehmung</td>
+                    </tr>
+                    <tr>
+                        <td>Monoparese/-plegie</td>
+                        <td>Eine Monoparese ist die Schwäche eines Arms oder Beins; Eine vollständige Lähmung heißt Monoplegie</td>
+                    </tr>
+                    <tr>
+                        <td>Hemiparese/-plegie</td>
+                        <td>Eine Hemiparese ist die Schwäche einer Körperhälfte; Eine vollständige Lähmung heißt Hemiplegie</td>
+                    </tr>
+                    <tr>
+                        <td>Paraparese/-plegie</td>
+                        <td>Paraparese ist die beidseitige unvollständige Lähmung symmetrischer Extremitäten, meist der Beine. Paraplegie ist die vollständige Lähmung dieser Extremitäten.</td>
+                    </tr>
+                    <tr>
+                        <td>Tetraparese/-plegie</td>
+                        <td>Tetraparese ist die Lähmung aller vier Extremitäten. Eine vollständige Lähmung heißt Tetraplegie.</td>
+                    </tr>
+                    <tr>
+                        <td>Bradykinese</td>
+                        <td>Als Bradykinese bezeichnet man die Verlangsamung der Willkürmotorik</td>
+                    </tr>
+                    <tr>
+                        <td>Ipsilateral</td>
+                        <td>auf derselben Körperseite oder -hälfte gelegen</td>
+                    </tr>
+                    <tr>
+                        <td>Kontralateral</td>
+                        <td>auf der entgegengesetzten Körperseite oder -hälfte gelegen</td>
+                    </tr>
+                    <tr>
+                        <td>Bilateral</td>
+                        <td>"auf beiden Seiten" oder "zweiseitig"</td>
+                    </tr>
+                    <tr>
+                        <td>Amplitude</td>
+                        <td>Die Amplitude eines Tremors ist der Ausschlag der unwillkürlichen Bewegungen</td>
+                    </tr>
+                    <tr>
+                        <td>Komorbidität(en)</td>
+                        <td>Das gleichzeitige Vorkommen von zwei oder mehr verschiedenen Erkrankungen bei einem Patienten.</td>
+                    </tr>
+                    <tr>
+                        <td>Alexithymie</td>
+                        <td>Alexithymie beschreibt Schwierigkeiten, eigene Emotionen zu erkennen, zu verstehen und auszudrücken</td>
+                    </tr>
+                    <tr>
+                        <td>Dissoziation</td>
+                        <td>Eine Dissoziation ist in der Psychologie das Trennen oder die Trennung von normalerweise zusammenhängenden Wahrnehmungen, Gedanken, Gefühlen oder Erinnerungen</td>
+                    </tr>
             </div>
         </div>
         `;
